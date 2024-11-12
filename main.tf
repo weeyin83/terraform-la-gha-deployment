@@ -11,10 +11,10 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = var.state_rg_name
-    storage_account_name = var.state_storage_account
-    container_name       = var.container_name
-    key                  = var.state_file_name
+    resource_group_name  = "tfstate-demo-rg"
+    storage_account_name = "tfstatesademo"
+    container_name       = "tfstate"
+    key                  = "tfdemo.ga.tfstate"
   }
 }
 
