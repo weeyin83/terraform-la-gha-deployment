@@ -1,9 +1,7 @@
 name: Terraform deploy Log Analytics
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   terraform:
