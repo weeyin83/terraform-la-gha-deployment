@@ -11,10 +11,10 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = ENTER VARIABLE
-    storage_account_name = ENTER VARIABLE
-    container_name       = ENTER VARIABLE
-    key                  = ENTER VARIABLE
+    resource_group_name  = var.state_rg_name
+    storage_account_name = var.state_storage_account
+    container_name       = var.container_name
+    key                  = var.state_file_name
   }
 }
 
