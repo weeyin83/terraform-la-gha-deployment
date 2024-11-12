@@ -10,6 +10,12 @@ terraform {
       version = ">= 3.5.0, < 4.0.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name  = "tfstate-demo-rg"
+    storage_account_name = "tfstatesademo"
+    container_name       = "tfstate"
+    key                  = "tfdemo.ga.tfstate"
+  }
 }
 
 
