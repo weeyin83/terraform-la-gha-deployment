@@ -70,6 +70,7 @@ resource "azurerm_resource_group" "rg" {
 # This is the module call
 module "log_analytics_workspace" {
   source = "Azure/avm-res-operationalinsights-workspace/azurerm"
+  version = "0.4.2"
   # source             = "Azure/avm-res-operationalinsights-workspace/azurerm"
   enable_telemetry                          = var.enable_telemetry
   location                                  = azurerm_resource_group.rg.location
