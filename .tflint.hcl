@@ -18,10 +18,6 @@ rule "azurerm_invalid_variable_type" {
   enabled = true
 }
 
-rule "azurerm_redundant_tag" {
-  enabled = true
-}
-
 rule "azurerm_standard_sku" {
   enabled = true
 }
