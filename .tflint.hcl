@@ -9,18 +9,6 @@ rule "terraform_deprecated_interpolation" {
   enabled = true
 }
 
-rule "terraform_unused_declarations" {
-  enabled = true
-}
-
-rule "terraform_unused_variables" {
-  enabled = true
-}
-
-rule "terraform_invalid_declaration" {
-  enabled = true
-}
-
 # Azure-specific rules
 rule "azurerm_invalid_resource_type" {
   enabled = true
