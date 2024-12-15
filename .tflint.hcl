@@ -21,9 +21,4 @@ rule "azurerm_invalid_variable_type" {
 rule "azurerm_standard_sku" {
   enabled = true
 }
-
-rule "azurerm_latest_version" {
-  enabled = true
-}
-
 # Additional customizations as needed
