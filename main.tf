@@ -22,7 +22,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = "6a2908bc-22da-454c-bfb9-87edf787700b"
+  subscription_id = "xxx-xxx-xxxx-xxxx"
 }
 
 # This ensures we have unique CAF compliant names for our resources.
